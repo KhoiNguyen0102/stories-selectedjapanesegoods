@@ -1,55 +1,75 @@
 <!doctype html>
 <html lang="vi">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Selected Japanese Goods</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
-<style>
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;background:#fff;color:#284555;font-family:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-text-size-adjust:100%}
-.page{max-width:1280px;margin:0 auto;background:#fff;overflow:hidden}
-iframe.b{display:block;width:100%;border:0;overflow:hidden;background:transparent}
-.sec{background:linear-gradient(135deg,#fdeef4 0%,#fff 55%,#eef5fb 100%);padding:6% 8.5% 2%}
-.sec .k{font-size:clamp(9px,1.5vw,15px);color:#5b7a8a;letter-spacing:.04em;margin:0 0 1.2%}
-.sec h2{font-family:Lora,Georgia,serif;font-weight:500;font-size:clamp(34px,8vw,84px);margin:0 0 2%;color:#284555;line-height:1.1}
-.news-link{display:block;width:83%;aspect-ratio:576/59}
-.ns{display:grid;grid-template-columns:1fr 1fr;gap:4%;align-items:center;padding:4% 8.5%;background:linear-gradient(135deg,#fdeef4 0%,#fff 55%,#eef5fb 100%)}
-.ns .img{width:100%;aspect-ratio:338/301}
-.ns .txt .k{font-size:clamp(10px,1.6vw,15px);color:#5b7a8a;margin:0 0 3%}
-.ns h3{font-family:Lora,Georgia,serif;font-weight:500;font-size:clamp(28px,5.4vw,60px);line-height:1.15;margin:0 0 4%;color:#284555}
-.ns p{font-size:clamp(14px,1.9vw,19px);line-height:1.7;margin:0 0 5%;color:#355a6c}
-.ns .btn{width:70%;aspect-ratio:279/59}
-@media (max-width:700px){
- .sec{padding:10% 6% 3%}
- .ns{grid-template-columns:1fr;padding:6%;gap:20px}
- .ns .btn{width:75%}
- .news-link{width:100%}
-}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Stories — Sản phẩm Nhật Bản chọn lọc. Khám phá trà xanh matcha dạng sệt, nước tương chan kem, nước khoáng siêu ga và bình lọc nước.">
+  <title>Stories | Sản phẩm Nhật Bản chọn lọc</title>
+  <link rel="icon" type="image/webp" href="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/assets/stories-logo-v7.webp">
+  <link rel="preload" href="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/assets/fonts/be-vietnam-pro-regular.woff" as="font" type="font/woff" crossorigin><link rel="preload" href="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/assets/fonts/lora-variable.woff" as="font" type="font/woff" crossorigin><link rel="stylesheet" href="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/styles.css?v=87">
 </head>
-<body>
-<div class="page">
- <iframe class="b" id="h" scrolling="no" src="b0-header.html" title="Đầu trang" style="aspect-ratio:1280/190"></iframe>
- <iframe class="b" scrolling="no" src="https://khoinguyen0102.github.io/sjg-embeds/products.html" title="Sản phẩm" style="aspect-ratio:694/736"></iframe>
- <iframe class="b" scrolling="no" src="b2-story.html" title="Câu chuyện" style="aspect-ratio:694/301"></iframe>
- <section class="sec">
-  <p class="k">Góc Stories</p>
-  <h2>Tin tức</h2>
-  <iframe class="b news-link" scrolling="no" src="b3-newslink.html" title="Xem tất cả tin tức"></iframe>
- </section>
- <section class="ns">
-  <iframe class="b img" scrolling="no" src="b4-nsimage.html" title="NS Group"></iframe>
-  <div class="txt">
-   <p class="k">Góc Stories · câu chuyện đối tác</p>
-   <h3>NS Group — hương vị Nhật cho những nhu cầu mới</h3>
-   <p>Một hệ sinh thái bánh kẹo, ba hướng phát triển sản phẩm và cơ hội đồng hành tại thị trường Việt Nam.</p>
-   <iframe class="b btn" scrolling="no" src="b5-readstory.html" title="Đọc câu chuyện"></iframe>
+<body class="home-page catalog-home">
+  <a class="skip-link" href="#main">Chuyển đến nội dung chính</a>
+  <svg class="svg-sprite" aria-hidden="true">
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5h18v14H3V5Zm1 1 8 7 8-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M7 3 4 5c0 8 7 15 15 15l2-3-5-3-2 2c-3-1-5-3-6-6l2-2-3-5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <div class="page-shell">
+    <header class="site-header" id="top">
+      <div class="header-brand"><a class="stories-logo-link" href="./index.html" aria-current="page" aria-label="Stories — sản phẩm"><img src="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/assets/stories-logo-v7.webp" alt="Logo Stories"></a><span class="brand-tagline" lang="en">Selected<br>Japanese Goods</span></div>
+      <nav class="top-nav" aria-label="Điều hướng chính"><a class="is-current" aria-current="page" href="./index.html#products">Sản phẩm</a><a href="#story">Câu chuyện thương hiệu</a><a href="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/news.html">Tin tức</a><a href="#contact">Liên hệ</a></nav>
+      <div class="header-actions"><button class="menu-toggle" type="button" aria-controls="product-menu" aria-expanded="false" aria-label="Mở danh mục điều hướng"><span></span><span></span><span></span></button><a class="header-cta" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=diem%40issho.asia" target="_blank" rel="noopener noreferrer">Gửi email</a></div>
+    </header>
+
+    <main id="main">
+<section class="product-catalog entry-catalog" id="products" tabindex="-1" aria-labelledby="products-title"><h1 class="sr-only" id="products-title">Sản phẩm Stories</h1><div class="catalog-grid catalog-grid-four"><a class="catalog-card catalog-card-matcha" id="featured" href="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/matcha.html" aria-labelledby="catalog-title-1"><div class="catalog-card-visual"><div class="catalog-image-benefits image-benefit-tags" aria-label="Ba đặc điểm nổi bật"><span>Giữ màu</span><span>Đậm vị matcha</span><span>Tiết kiệm thời gian</span></div><img src="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/assets/matcha-chawan-v40.jpg" alt="Trà xanh matcha dạng sệt (matcha paste) sánh mịn chảy từ muỗng gỗ xuống bát gốm trên nền loang xanh hồng" width="1254" height="1254" fetchpriority="high"></div><div class="catalog-card-copy"><small>Sản phẩm 01</small><h2 id="catalog-title-1">Trà xanh matcha dạng sệt (matcha paste)</h2><p>Dạng sệt tiện dụng cho các công thức bánh, kem, đồ uống và món tráng miệng.</p><b class="catalog-action">Xem sản phẩm <span aria-hidden="true">→</span></b></div></a><a class="catalog-card catalog-card-yamato" href="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/product-2.html" aria-labelledby="catalog-title-2"><div class="catalog-card-visual"><div class="catalog-image-benefits image-benefit-tags" aria-label="Ba đặc điểm nổi bật"><span>Bất ngờ</span><span>Chiều sâu</span><span>Tiết kiệm diện tích</span></div><img src="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/assets/yamato-pack-v36.webp" alt="Nước tương chan kem" width="1254" height="1254" loading="lazy"></div><div class="catalog-card-copy"><small>Sản phẩm 02</small><h2 id="catalog-title-2">Nước tương chan kem</h2><p>Sự kết hợp độc đáo giữa nước tương và kem, mang đến trải nghiệm vị giác mới lạ.</p><b class="catalog-action">Xem sản phẩm <span aria-hidden="true">→</span></b></div></a><a class="catalog-card catalog-card-sparkling" href="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/product-3.html" aria-labelledby="catalog-title-3"><div class="catalog-card-visual"><div class="catalog-image-benefits image-benefit-tags" aria-label="Ba đặc điểm nổi bật"><span>Không lẫn vị</span><span>Tốt cho sức khỏe</span><span>Ga mạnh</span></div><img src="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/assets/sparkling-pack-v36.webp" alt="Nước khoáng siêu ga" width="1254" height="1254" loading="lazy"></div><div class="catalog-card-copy"><small>Sản phẩm 03</small><h2 id="catalog-title-3">Nước khoáng siêu ga</h2><p>Nước có ga mạnh dành cho những ai yêu thích cảm giác bọt ga rõ rệt khi thưởng thức.</p><b class="catalog-action">Xem sản phẩm <span aria-hidden="true">→</span></b></div></a><a class="catalog-card catalog-card-welvina" href="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/welvina-pitcher.html" aria-labelledby="catalog-title-4"><div class="catalog-card-visual"><div class="catalog-image-benefits image-benefit-tags" aria-label="Ba đặc điểm nổi bật"><span>Silica thực vật</span><span>Công nghệ Nhật Bản</span><span>Bổ sung khoáng</span></div><img src="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/assets/welvina-official-pack-v33.webp" alt="Bình lọc nước" width="620" height="620" loading="lazy"></div><div class="catalog-card-copy"><small>Sản phẩm 04</small><h2 id="catalog-title-4">Bình lọc nước</h2><p>Lọc nước tại nhà với than hoạt tính từ vỏ trấu gạo Nhật Bản, đồng thời bổ sung silica hòa tan có nguồn gốc thực vật.</p><b class="catalog-action">Xem sản phẩm <span aria-hidden="true">→</span></b></div></a></div></section>
+
+      <section class="stories-story" id="story" aria-labelledby="story-title" tabindex="-1">
+        <div class="home-section-heading">
+          <p class="kicker">Stories · những câu chuyện</p>
+          <h2 id="story-title">Câu chuyện thương hiệu</h2>
+        </div>
+        <div class="stories-story-copy">
+          <blockquote><p>“Đối với chúng tôi, một sản phẩm tốt là một sản phẩm có câu chuyện.”</p></blockquote>
+          <p>Stories nghĩa là “những câu chuyện”. Đó cũng là cách chúng tôi muốn bạn khám phá một sản phẩm: từ nơi nó bắt đầu, điều làm nên nét riêng, đến cách nó trở thành một phần trong cuộc sống.</p>
+          <a class="button home-primary" href="#products">Khám phá sản phẩm <span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
+
+      <section class="home-journal" id="news" aria-labelledby="news-title" tabindex="-1">
+        <div class="home-section-heading home-news-heading">
+          <p class="kicker">Góc Stories</p>
+          <h2 id="news-title">Tin tức</h2>
+          <a class="home-section-link" href="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/news.html">Xem tất cả tin tức <span aria-hidden="true">→</span></a>
+        </div>
+      <article class="home-news-feature">
+        <a class="home-news-feature-media" href="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/ns-group.html" aria-label="Đọc câu chuyện NS Group"><img src="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/assets/ns-group-products-focus-v2.webp" alt="Các sản phẩm bánh kẹo thuộc hệ thống NS Group" loading="lazy" decoding="async"><span>11<small>Công ty<br>Thành viên</small></span></a>
+        <div class="home-news-feature-copy"><p class="kicker green">Góc Stories · câu chuyện đối tác</p><h3>NS Group — hương vị Nhật cho những nhu cầu mới</h3><p>Một hệ sinh thái bánh kẹo, ba hướng phát triển sản phẩm và cơ hội đồng hành tại thị trường Việt Nam.</p><a class="button home-primary" href="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/ns-group.html">Đọc câu chuyện</a></div>
+      </article>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title" tabindex="-1">
+        <div class="contact-lead consulting-contact-copy"><p class="kicker acid">Đồng hành cùng Issho Asia</p><h2 class="home-section-title" id="contact-title">Liên hệ</h2><p class="home-contact-prompt">Bạn muốn kinh doanh trà hoặc mở quán cà phê?</p><p class="consulting-contact-description">Issho Asia là công ty tư vấn. Với sự đồng hành của các chuyên gia ở nhiều lĩnh vực, chúng tôi sẵn sàng hỗ trợ kế hoạch kinh doanh của bạn.</p><a class="button button-acid" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=diem%40issho.asia&amp;su=T%C6%B0+v%E1%BA%A5n+kinh+doanh+tr%C3%A0+v%C3%A0+qu%C3%A1n+c%C3%A0+ph%C3%AA" target="_blank" rel="noopener noreferrer">Trao đổi cùng Issho Asia <span aria-hidden="true">→</span></a></div>
+        <div class="contact-card"><h3>Công ty TNHH Issho Asia</h3><p>3rd Floor, Quang Thuan Group Building,<br>92B Nguyen Huu Canh, Thanh My Tay Ward, Ho Chi Minh City</p><div class="contact-grid"><div class="contact-person"><b>Diễm · Liên hệ tư vấn</b><a class="contact-phone" href="tel:+84362969900" aria-label="Gọi Diễm, 036 296 9900"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3 4 5c0 8 7 15 15 15l2-3-5-3-2 2c-3-1-5-3-6-6l2-2-3-5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span><small>Diễm · Liên hệ tư vấn</small><b>036 296 9900</b></span></a><a class="email-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=diem%40issho.asia" target="_blank" rel="noopener noreferrer"><svg><use href="#i-mail"/></svg>diem@issho.asia</a></div></div></div>
+      </section>
+    </main>
+
+    <footer><a class="stories-logo-link footer-logo" href="#top" aria-label="Lên đầu trang"><img src="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/assets/stories-logo-v7.webp" alt="Logo Stories"></a><p>Stories · Sản phẩm Nhật Bản chọn lọc</p><a href="#top">Lên đầu trang ↑</a></footer>
   </div>
- </section>
- <iframe class="b" scrolling="no" src="b6-contact.html" title="Liên hệ" style="aspect-ratio:694/635"></iframe>
- <iframe class="b" scrolling="no" src="b7-footer.html" title="Chân trang" style="aspect-ratio:694/113"></iframe>
-</div>
+
+  <button class="menu-backdrop" type="button" aria-label="Đóng danh mục" tabindex="-1"></button>
+  <aside class="menu-drawer" id="product-menu" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Điều hướng Stories" inert>
+    <div class="menu-drawer-head"><div><small>Stories</small><strong>Khám phá</strong></div><button class="menu-close" type="button" aria-label="Đóng danh mục">×</button></div>
+    <nav class="menu-page-links" aria-label="Trang chính"><a class="is-current" aria-current="page" href="./index.html#products">Sản phẩm</a><a href="#story">Câu chuyện thương hiệu</a><a href="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/news.html">Tin tức</a><a href="#contact">Liên hệ</a></nav>
+    <nav class="menu-product-list" aria-label="Các sản phẩm">
+      <a class="menu-product-card" href="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/matcha.html"><img src="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/assets/matcha-chawan-v40-thumb.webp" alt="Trà xanh matcha dạng sệt (matcha paste)" width="320" height="320"><span><small>Sản phẩm 01</small><b>Trà xanh matcha dạng sệt (matcha paste)</b></span></a>
+      <a class="menu-product-card" href="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/product-2.html"><img src="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/assets/yamato-pack-v36-thumb.webp" alt="Nước tương chan kem" width="320" height="320"><span><small>Sản phẩm 02</small><b>Nước tương chan kem</b></span></a>
+      <a class="menu-product-card" href="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/product-3.html"><img src="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/assets/sparkling-pack-v36-thumb.webp" alt="Nước khoáng siêu ga" width="320" height="320"><span><small>Sản phẩm 03</small><b>Nước khoáng siêu ga</b></span></a>
+      <a class="menu-product-card" href="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/welvina-pitcher.html"><img src="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/assets/welvina-official-thumb-v33.webp" alt="Bình lọc nước" width="320" height="320"><span><small>Sản phẩm 04</small><b>Bình lọc nước</b></span></a>
+    </nav>
+  </aside>
+  <div class="floating-contact" aria-label="Liên hệ tư vấn"><a class="floating-phone" href="tel:+84362969900" aria-label="Gọi Diễm, 036 296 9900"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3 4 5c0 8 7 15 15 15l2-3-5-3-2 2c-3-1-5-3-6-6l2-2-3-5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span><small>Gọi Diễm</small><b>036 296 9900</b></span></a><a class="floating-email" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=diem%40issho.asia" aria-label="Mở Gmail để gửi email đến diem@issho.asia" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3V5Zm1 1 8 7 8-7" fill="none" stroke="currentColor" stroke-width="1.8"/></svg><span>Gửi email</span></a></div>
+  <script src="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/menu.js?v=35" defer></script>
 </body>
 </html>

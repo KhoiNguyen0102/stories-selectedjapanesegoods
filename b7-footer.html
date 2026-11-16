@@ -1,0 +1,66 @@
+<style>/*NS3*/html,body{position:fixed!important;top:0!important;left:0!important;width:100%!important;height:100%!important;overflow:hidden!important}</style><style>/*NS*/html,body{overflow:hidden!important}</style><!-- ===== Chân trang: dán vào khối "Nhúng mã". Cỡ cố định. Chiều cao khối = 104px (máy tính); điện thoại hẹp xem tin nhắn ===== -->
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;800&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; background: transparent; }
+  * { box-sizing: border-box; }
+  .foot { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 34px; font-family: "Be Vietnam Pro", system-ui, sans-serif; color: #536874; font-size: 12px; }
+  .foot img { flex: none; width: 68px; height: 68px; border-radius: 50%; object-fit: contain; background: #fff; box-shadow: 0 6px 18px rgba(48,99,115,.12); }
+  .foot p { margin: 0; text-align: center; }
+  .top { font-weight: 800; text-decoration: none; color: #536874; white-space: nowrap; }
+  .top:hover { text-decoration: underline; }
+  .top:focus-visible { outline: 3px solid #3f8fb0; outline-offset: 3px; border-radius: 4px; }
+  @media (max-width: 600px) { .foot { padding: 8px 12px; gap: 10px; } .foot img { width: 44px; height: 44px; box-shadow: 0 3px 10px rgba(48,99,115,.12); } .foot p { flex: 1; text-align: left; font-size: 11px; line-height: 1.4; } .top { font-size: 11px; } }
+</style>
+<div class="foot">
+  <img src="https://green-tea-paste-with-matcha.vtkhanhlinh101203.chatgpt.site/assets/stories-logo-v7.webp" alt="Logo Stories">
+  <p>Stories · Sản phẩm Nhật Bản chọn lọc</p>
+  <a class="top" href="https://sites.google.com/view/stories-selectedjapanesegoods/li%C3%AAn-h%E1%BB%87" target="_blank" rel="noopener">Lên đầu trang ↑</a>
+</div>
+<script>
+  (function () {
+    var w = document.querySelector('.foot');
+    function measure(z) { w.style.width = (window.innerWidth / z) + 'px'; w.style.height = 'auto'; return w.offsetHeight; }
+    function fit() {
+      var H = window.innerHeight - 2, z = 1;
+      w.style.transform = '';
+      var h = measure(1);
+      if (h > H) { z = H / h; h = measure(z); if (h * z > H) z = H / h; }
+      w.style.width = (window.innerWidth / z) + 'px';
+      w.style.height = ((H + 2) / z) + 'px';
+      w.style.transformOrigin = '0 0';
+      w.style.transform = z < 1 ? 'scale(' + z + ')' : '';
+    }
+    window.addEventListener('resize', fit);
+    window.addEventListener('load', fit);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+    fit();
+  })();
+/*LK2*/(function(){
+var B="https://sites.google.com/view/stories-selectedjapanesegoods/",K=B+"kh%C3%A1m-ph%C3%A1/",
+P=B+"products",N=B+"news",S=K+"ns-group",T="https://sites.google.com/view/stories-selectedjapanesegoods/home",
+H={"matcha":K+"matcha","product-2":K+"product-2","product-3":K+"product-3","welvina-pitcher":K+"welvina-pitcher","ns-group":S,"products":P,"story":B+"story","contact":B+"contact","news":N,"home":B+"home"};
+function nm(s){return(s||"").replace(/\s+/g," ").replace(/[←-⇿›»]/g,"").trim().toLowerCase()}
+function route(el){
+if(!el||el.nodeType!==1)return null;
+var d=el.getAttribute("data-h");
+if(d){var k=d.replace(/\.html$/,"");if(H[k])return H[k]}
+var t=nm(el.textContent);
+if(!t||t.length>48)return null;
+var tg=el.tagName,c=tg==="A"||tg==="BUTTON"||el.getAttribute("role")==="button"||/button|btn|action|cta|link/i.test(typeof el.className==="string"?el.className:"");
+if(/^[\d\s.+()-]{9,16}$/.test(t)&&t.replace(/\D/g,"").slice(-9)==="362969900")return "tel:0362969900";
+if(!c)return null;
+if(t.indexOf("khám phá sản phẩm")>=0||t.indexOf("tất cả sản phẩm")>=0||t.indexOf("xem danh mục sản phẩm")>=0)return P;
+if(t.indexOf("xem tất cả tin tức")>=0||t.indexOf("trở lại trang tin tức")>=0||t==="tin tức")return N;
+if(t.indexOf("đọc câu chuyện")>=0)return S;
+if(t.indexOf("lên đầu trang")>=0&&T)return T;
+return null}
+function go(u){var w=null;try{w=window.open(u,"_blank","noopener")}catch(e){}if(!w){try{window.top.location.href=u}catch(e){}}}
+function onc(e){var el=e.target;while(el&&el.nodeType===1&&el.tagName!=="HTML"){var u=route(el);if(u){if(u.indexOf("tel:")===0){if(el.tagName==="A"){el.setAttribute("href",u);return}e.preventDefault();window.location.href=u;return}e.preventDefault();e.stopImmediatePropagation();go(u);return}el=el.parentNode}}
+function scan(d){try{var l=d.querySelectorAll("a,button,[role=button],[class*=button],[class*=btn],[class*=action],[class*=cta]");for(var i=0;i<l.length;i++){var u=route(l[i]);if(u){l[i].style.cursor="pointer";if(l[i].tagName==="A"){l[i].setAttribute("href",u);if(u.indexOf("tel:")!==0){l[i].setAttribute("target","_blank");l[i].setAttribute("rel","noopener")}}}}
+var a=d.querySelectorAll("p,span,div,b,strong,li,td,dd");for(var k=0;k<a.length;k++){var e=a[k];if(e.children.length||e.__tel||e.closest("a"))continue;var x=(e.textContent||"").trim();if(/^[\d\s.+()-]{9,16}$/.test(x)&&x.replace(/\D/g,"").slice(-9)==="362969900"){e.__tel=1;e.innerHTML='<a href="tel:0362969900" style="color:inherit;text-decoration:inherit;cursor:pointer">'+e.innerHTML+'</a>'}}}catch(x){}}
+function inst(d){if(!d||d.__lk)return;d.__lk=1;d.addEventListener("click",onc,true);scan(d);setTimeout(function(){scan(d)},800)}
+inst(document);
+var fr=document.querySelectorAll("iframe");
+for(var i=0;i<fr.length;i++)(function(f){function t(){try{inst(f.contentDocument)}catch(x){}}t();f.addEventListener("load",t);setTimeout(t,500);setTimeout(t,1500)})(fr[i]);
+})();
+</script>

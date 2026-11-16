@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Selected Japanese Goods</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#fff;color:#284555;font-family:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-text-size-adjust:100%}
+.page{max-width:1280px;margin:0 auto;background:#fff;overflow:hidden}
+iframe.b{display:block;width:100%;border:0;overflow:hidden;background:transparent}
+.sec{background:linear-gradient(135deg,#fdeef4 0%,#fff 55%,#eef5fb 100%);padding:6% 8.5% 2%}
+.sec .k{font-size:clamp(9px,1.5vw,15px);color:#5b7a8a;letter-spacing:.04em;margin:0 0 1.2%}
+.sec h2{font-family:Lora,Georgia,serif;font-weight:500;font-size:clamp(34px,8vw,84px);margin:0 0 2%;color:#284555;line-height:1.1}
+.news-link{display:block;width:83%;aspect-ratio:576/59}
+.ns{display:grid;grid-template-columns:1fr 1fr;gap:4%;align-items:center;padding:4% 8.5%;background:linear-gradient(135deg,#fdeef4 0%,#fff 55%,#eef5fb 100%)}
+.ns .img{width:100%;aspect-ratio:338/301}
+.ns .txt .k{font-size:clamp(10px,1.6vw,15px);color:#5b7a8a;margin:0 0 3%}
+.ns h3{font-family:Lora,Georgia,serif;font-weight:500;font-size:clamp(28px,5.4vw,60px);line-height:1.15;margin:0 0 4%;color:#284555}
+.ns p{font-size:clamp(14px,1.9vw,19px);line-height:1.7;margin:0 0 5%;color:#355a6c}
+.ns .btn{width:70%;aspect-ratio:279/59}
+@media (max-width:700px){
+ .sec{padding:10% 6% 3%}
+ .ns{grid-template-columns:1fr;padding:6%;gap:20px}
+ .ns .btn{width:75%}
+ .news-link{width:100%}
+}
+</style>
+</head>
+<body>
+<div class="page">
+ <iframe class="b" id="h" scrolling="no" src="b0-header.html" title="Đầu trang" style="aspect-ratio:1280/190"></iframe>
+ <iframe class="b" scrolling="no" src="https://khoinguyen0102.github.io/sjg-embeds/products.html" title="Sản phẩm" style="aspect-ratio:694/736"></iframe>
+ <iframe class="b" scrolling="no" src="b2-story.html" title="Câu chuyện" style="aspect-ratio:694/301"></iframe>
+ <section class="sec">
+  <p class="k">Góc Stories</p>
+  <h2>Tin tức</h2>
+  <iframe class="b news-link" scrolling="no" src="b3-newslink.html" title="Xem tất cả tin tức"></iframe>
+ </section>
+ <section class="ns">
+  <iframe class="b img" scrolling="no" src="b4-nsimage.html" title="NS Group"></iframe>
+  <div class="txt">
+   <p class="k">Góc Stories · câu chuyện đối tác</p>
+   <h3>NS Group — hương vị Nhật cho những nhu cầu mới</h3>
+   <p>Một hệ sinh thái bánh kẹo, ba hướng phát triển sản phẩm và cơ hội đồng hành tại thị trường Việt Nam.</p>
+   <iframe class="b btn" scrolling="no" src="b5-readstory.html" title="Đọc câu chuyện"></iframe>
+  </div>
+ </section>
+ <iframe class="b" scrolling="no" src="b6-contact.html" title="Liên hệ" style="aspect-ratio:694/635"></iframe>
+ <iframe class="b" scrolling="no" src="b7-footer.html" title="Chân trang" style="aspect-ratio:694/113"></iframe>
+</div>
+</body>
+</html>
